@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="validation.js" defer></script>
 </head>
 <body>
     <main>
@@ -34,8 +35,11 @@
 
                        
                         <div class="input-wrapper">
-                            <label for="first-name">Fisrt Name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <label for="first-name">Fisrt Name*</label>
+                            <input type="text" 
+                            id="first-name" 
+                            name="first-name"
+                            required>
                         </div>
                     
 
@@ -48,27 +52,30 @@
                     <div class="form-row">
 
                         <div class="input-wrapper">
-                            <label for="email">Email*</label>
+                            <label for="email">Email*
+                            <span>Format email@test.com</span></label>
                             <input type="email" id="email" name="email"
                             required
                             >
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel"  id="phone" name="phone">
+                            <label for="phone">Phone Number <span>Must have the follow format 37-123456789</span></label>
+                            <input type="tel"id="phone" name="phone"
+                            placeholder="EX: 37-123456789">
                         </div>
 
                     </div>
                     <div class="form-row">
                         <div class="input-wrapper">
-                            <label for="password">Password*</label>
+                            <label for="password">Password* <span>min 9 characters max 20</span></label>
                             <input type="password" id="password" name="password"
-                            required>
+                            required
+                            minlength="8">
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="confirm-password">Confirm Password*</label>
+                            <label for="confirm-password">Confirm Password* <span>Must match with the password</span></label>
                             <input type="password" id="confirm-password" name="confirm-password"
                             required>
                         </div>

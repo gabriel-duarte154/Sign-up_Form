@@ -132,6 +132,12 @@ main {
     text-decoration: underline;
 }
 
+label > span {
+    display: none;
+    padding: 2px;
+    color: #F23078;
+}
+
 @media screen and (max-width: 950px) {
     html {
         font-size: 14px;
